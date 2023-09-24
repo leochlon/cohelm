@@ -1,0 +1,7 @@
+What is the uggested treatment plan the doctor is prescribing
+What is a list of allergies the patient has'
+What is a list of medications the patient is taking, with any known side-effects']]
+Does the patient have a family history of hypertension?
+Does the patient have a family history of colon cancer?
+Has the patient experienced minimal bright red blood per rectum?',
+Is the recommended treatment plan appropriate given the rest of the information int he report?

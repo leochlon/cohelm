@@ -1,0 +1,12 @@
+[
+    {
+    	"api_key":{
+    		"api_key":"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"
+    	},
+        "Input": {
+            "Task Description": "You are a nurse trying to fill out insurance paperwork for a patient by parsing their medical report and using evidence from the report to answering a series of questions.",
+            "Medical Report": "The medical report is in json format, with each key, value pair corresponding to the section name and section contents. Use both as evidence when answering the questions. The following is the medical report {}",
+            "Input Questions and Task Requirement": "Perform the task with the medical report for the following list of questions and print the output: {}. The output of the task should be a list of dictionaries following JSON format. Each dictionary corresponds to a question in the input list and should consist of 'question', 'answer', 'reason', 'section', 'if_reasonable', 'confidence' as 6 keys. The value of 'question' should be the question being answered. The value of 'answer' to the question using information from the report. The value of 'confidence' key is an integer ranging from 0 to 10, indicating how confident you are that the 'answer' satisfies the 'question' given the medical report, a confidence score of 10 corresponds to a definite answer drawn from the report (e.g. Answering 'the patient does not have the flu' when the report explicitly mentions they tested negative for the flu) from a pertinent section ('the patient does not gave the flu' in a section corresponding to assessment of the patient); answering 'yes' or 'no' without the mention of an explicit indicator in the report does NOT warrant a confidence score of 10. The value of 'reason' key is a string describing the reason why the 'answer' satisfies the 'question'. The value of 'section' should be all the section titles where the evidence used in 'reason' to come to your 'answer' was found. The value of 'if_reasonable' key is either 0 (indicating the reason given in the 'reason' field is not reasonable) or 1 (indicating the reason given in the 'reason' field is reasonable). Note that your answer should only contain the JSON string and nothing else. Do not include speech marks around any string which is not a key"
+        }
+    }
+]
